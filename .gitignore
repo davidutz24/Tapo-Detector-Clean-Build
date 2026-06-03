@@ -110,6 +110,16 @@ dist
 # vitepress cache directory
 **/.vitepress/cache
 
+# TAPO Meteor Network generated/backend runtime files
+tpn-backend/build/
+tpn-backend/dist/
+tpn-backend/InstallerOutput/
+tpn-backend/__pycache__/
+tpn-backend/static/detections/
+tpn-backend/static/masks/
+tpn-backend/config.local.json
+tpn-backend/TAPO_Meteor_Network.spec
+
 # Docusaurus cache and generated files
 .docusaurus
 
