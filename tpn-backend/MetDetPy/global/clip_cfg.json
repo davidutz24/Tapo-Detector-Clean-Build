@@ -1,0 +1,106 @@
+{
+    "loader": "ThreadVideoLoader",
+    "wrapper": "PyAVVideoWrapper",
+    "writer": "FFMpegVideoWriter",
+    "raw_img_load_config": {
+        "power": 2.222,
+        "target_nl_mean": 0.3,
+        "contrast_alpha": 1.2,
+        "output_bps": 8
+    },
+    "image_denoise": {
+        "switch": false,
+        "highlight_preserve": 0.9,
+        "algorithm": "simple",
+        "blur_ksize": 31,
+        "connect_lines": {
+            "switch": true,
+            "ksize_multiplier": 1.5,
+            "gamma": 1,
+            "threshold": 30
+        },
+        "simple_param": {
+            "ds_radius": 10,
+            "ds_threshold": 20,
+            "bi_d": 10,
+            "bi_sigma_color": 15,
+            "bi_sigma_space": 6
+        },
+        "mfnr_param": {
+            "bg_algorithm": "mean",
+            "sigma_high": 3.0,
+            "sigma_low": 3.0,
+            "bg_fix_factor": 1.5
+        }
+    },
+    "export": {
+        "positive_category_list": [
+            "METEOR",
+            "RED_SPRITE"
+        ],
+        "bbox_color_mapping": {
+            "METEOR": [
+                0,
+                255,
+                0
+            ],
+            "PLANE/SATELLITE": [
+                64,
+                64,
+                64
+            ],
+            "RED_SPRITE": [
+                0,
+                0,
+                255
+            ],
+            "LIGHTNING": [
+                128,
+                128,
+                128
+            ],
+            "JET": [
+                0,
+                0,
+                255
+            ],
+            "RARE_SPRITE": [
+                0,
+                0,
+                255
+            ],
+            "SPACECRAFT": [
+                255,
+                0,
+                255
+            ]
+        },
+        "filter_rules": {
+            "switch": false,
+            "threshold": 0.6,
+            "min_length_ratio": 0.02,
+            "exclude_category_list": [
+                "BUGS"
+            ]
+        },
+        "with_bbox": false,
+        "with_annotation": false,
+        "bbox_color": [
+            0,
+            0,
+            255
+        ],
+        "bbox_thickness": 2,
+        "clip_padding": {
+            "before": 0.0,
+            "after": 0.0
+        },
+        "ffmpeg_config":{
+            "path": null,
+            "preset": "slow",
+            "crf": 18,
+            "video_encoder": "libx264",
+            "pix_fmt": "yuv420p"
+        }
+    }
+}

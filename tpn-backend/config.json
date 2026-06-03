@@ -1,0 +1,22 @@
+{
+  "cameras": [
+    {
+      "id": "1",
+      "name": "Front Yard",
+      "url": "rtsp://username:password@camera-ip:554/stream1",
+      "ignore_regions": []
+    },
+    {
+      "id": "2",
+      "name": "Back Yard",
+      "url": "rtsp://username:password@camera-ip:554/stream1",
+      "ignore_regions": []
+    }
+  ],
+  "warmup_frames": 90,
+  "max_overall_brightness": 80,
+  "max_motion_ratio": 0.14,
+  "max_motion_blob_ratio": 0.18,
+  "min_line_contrast": 12,
+  "require_ml_confirmation": false
+}

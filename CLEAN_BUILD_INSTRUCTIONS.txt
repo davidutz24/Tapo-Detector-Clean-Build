@@ -1,0 +1,34 @@
+TAPO Meteor Network - clean rebuild notes
+
+This folder intentionally excludes generated build output:
+- node_modules
+- dist
+- tpn-backend/build
+- tpn-backend/dist
+- tpn-backend/InstallerOutput
+- tpn-backend/__pycache__
+- runtime detections and masks
+
+Rebuild steps:
+
+1. Open PowerShell in this clean folder.
+
+2. Install and build the dashboard:
+   npm install
+   npm run build
+
+3. Install backend/build dependencies:
+   cd tpn-backend
+   py -3.12 -m pip install -r requirements.txt
+   py -3.12 build_exe.py
+
+4. Create the installer:
+   Open installer.iss with Inno Setup and compile it.
+
+Output locations:
+- Executable folder: tpn-backend\dist\TAPO_Meteor_Network
+- Installer EXE: tpn-backend\InstallerOutput\TAPOMeteorNetwork_Setup.exe
+
+Important:
+- Edit tpn-backend\config.json or create tpn-backend\config.local.json with real RTSP URLs.
+- The brush masks are runtime files. The app creates them automatically after you save a brush mask.

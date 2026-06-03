@@ -1,0 +1,15 @@
+numpy>=1.15.0
+opencv-python>=4.9.0
+tqdm>=4.0.0
+multiprocess>=0.70.0
+onnxruntime>=1.16.0
+av>=15.0.0
+dacite>=1.9.0
+pyexiv2>=2.12.0
+rawpy>=0.20.0
+
+# for windows user it is recommended to install:
+#onnxruntime-directml>=1.16.0
+
+# if you want to run make_package.py please install
+# nuitka>=1.9.5
