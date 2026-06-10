@@ -2,7 +2,7 @@
 
 Local meteor and fireball detection dashboard for TAPO RTSP cameras.
 
-TAPO Meteor Network combines a React/Vite dashboard with a Python/OpenCV backend to monitor live camera streams, detect meteor/fireball candidates, save evidence images, and let the operator mask unwanted areas of the sky with a brush editor.
+TAPO Meteor Network, also called **Tapo Detector**, combines a React/Vite dashboard with a Python/OpenCV backend to monitor live camera streams, detect meteor/fireball candidates, save evidence images, and let the operator mask unwanted areas of the sky with a brush editor.
 
 Watch the demo/tutorial on YouTube: [TAPO Meteor Network tutorial](https://youtu.be/2TvySN--I4Q?si=gvFPOTc75veD6XF-)
 
@@ -16,7 +16,9 @@ The project has been tested with real TAPO camera footage from sky-monitoring lo
 
 ![Real meteor detection example](docs/screenshots/meteor-detection-cam2.jpg)
 
-![Dashboard with brush mask editor and live detection log](docs/screenshots/brush-mask-dashboard.png) 
+![Meteor detection from Camera 1](docs/screenshots/meteor-detection-cam1-20260610.jpg)
+
+![Dashboard with brush mask editor and live detection log](docs/screenshots/brush-mask-dashboard.jpg)
 
 Useful links:
 
